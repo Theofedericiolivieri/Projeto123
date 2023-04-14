@@ -4,3 +4,27 @@
     margin: 0px;
     box-shadow: 5px 5px 5px rgba(0, 106, 255, 0.705);
 }
+.heading{
+    font-size:23px;
+    width: 100%;
+    margin: 0px;
+    box-shadow: 5px 5px 5px rgba(0, 255, 13, 0.705);
+}
+.Observacao{
+    font-size: 15px;
+    color:rgb(143, 20, 220);
+}
+.Creditos{
+    position: fixed;
+    color: crimson;
+    bottom: 0;
+    width: 100%;
+    background-color: gold;
+    line-height: 3;
+    text-align: center;
+}
+canvas{
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px grey;
+}
