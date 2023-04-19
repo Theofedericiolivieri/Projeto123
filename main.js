@@ -1,5 +1,3 @@
-noseX=0;
-noseY=0;
 difference=0;
 rightWristX=0;
 leftWristX=0;
@@ -17,5 +15,16 @@ function modelLoaded(){
 function gotPoses(results){
     if(results.length>0){
         console.log(results);
+        rightWristX=results[0].pose.rightWrist.x;
+        leftWristX=results[0].pose.leftWrist.x;
+        difference= floor(leftWristX- rightWristX);
+        console.log("leftWristX = " + leftWristX+ "rightWristX = "+ rightWristX+ "difference= "+ difference);
     }
+}
+function draw(){
+    background('white');
+    document.getElementById("text").innerHTML="Largura e altura serão = "+ difference+"px";
+    fill("#008C8C");
+    textSize(difference);
+    text("Théo", 275, 250);
 }
